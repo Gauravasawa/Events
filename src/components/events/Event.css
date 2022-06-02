@@ -105,3 +105,8 @@
 .bi-person-circle {
 cursor: pointer;
 }
+
+.error-msg{
+  color: red;
+  font-weight: 500;
+}
