@@ -34,17 +34,8 @@ const EventState = (props) => {
     });
     const json = await response.json();
     console.log(json);
-    const notes = {
-      _id: "6283b1e95fe198d7d0d63312m",
-      user: "62824a8348f935f5fe1f1bb7",
-      eventName: eventName,
-      eventDescription: eventDescription,
-      eventDate: "2022-05-17T14:32:09.863Z",
-      eventCreatedAt: "2022-05-17T14:32:09.863Z",
-      __v: 0,
-    };
+  
     setIntialState(intialState.concat(json));
-    props.showAlert("Added Event!", "success");
   };
 
   //delete a Event

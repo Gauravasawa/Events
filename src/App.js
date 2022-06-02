@@ -1,7 +1,8 @@
-import { useState } from "react";
-import "../src/components/events/Event.css";
-import Navbar from "./components/Navbar";
+import React,{useState} from "react";
 import { Routes, Route } from "react-router-dom";
+
+import "./components/events/Event.css";
+import Navbar from "./components/Navbar";
 import Home from "./components/home";
 import About from "./components/about";
 import NoteState from "./context/events/eventState";
@@ -9,7 +10,7 @@ import Alert from "./components/Alert";
 import Login from "./components/Login";
 import Signup from "./components/Signup";
 
-function App() {
+const App = () => {
   const [alert, setAlert] = useState(null);
 
   const showAlert = (message, type) => {
@@ -43,6 +44,6 @@ function App() {
       </NoteState>
     </>
   );
-}
+};
 
 export default App;
